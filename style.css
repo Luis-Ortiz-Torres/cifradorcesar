@@ -1,0 +1,129 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    flex-direction: column;
+    gap: 30px;
+    background: #3c4a5a;
+
+}
+
+.inputBox{
+
+    position: relative;
+    width: 300px;
+}
+
+
+
+.inputBox input{
+
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #3c4a5a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+
+.inputBox span{
+
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-weight: 700;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 0.3em;
+
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+
+    color: #ff6565;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.70em;
+    font-weight: 700;
+    padding: 0 10px;
+    background: #3c4a5a;
+    border-left: 1px solid #ff6565;
+    border-right: 1px solid #ff6565;
+    letter-spacing: 0.3em;
+
+}
+
+.inputBox input:valid, .inputBox input:focus{
+
+    border: 1px solid #ff6565;
+}
+
+.inputBox  input:valid ~ .resultado,
+.inputBox  input:focus ~ .resultado{
+
+    background: #ff6565;
+    color: #3c4a5a;
+    border-radius: 2px;
+    padding: 1px 10px;
+    font-weight: 700;
+}
+
+h1{
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+button{
+
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #ff6565;
+    border: 1px solid #ff6565;
+}
+
+.creditos{
+    background: #ff6565;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c4a5a;
+}
+
+.creditos h2{
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+
+}
